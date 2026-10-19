@@ -96,3 +96,27 @@ h3{font-size:1.3rem;line-height:1.15;letter-spacing:-.03em}
 @media(max-width:900px){.nav-toggle{display:inline-flex}.nav{display:none;position:absolute;top:76px;left:0;right:0;padding:18px 24px 28px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch}.nav.open{display:flex}.hero{padding-top:54px}.hero-grid,.intro-grid,.photo-story-grid,.learning-grid,.media-grid,.contact-grid{grid-template-columns:1fr;gap:52px}.hero-portrait{justify-self:start;max-width:500px}.hero-index{grid-template-columns:repeat(2,1fr);gap:10px}.practice-heading,.section-head{grid-template-columns:1fr;gap:18px}.practice-grid,.projects-grid,.sources-grid{grid-template-columns:1fr}.intro-copy{padding-top:0}.learning-image-stack{min-height:620px}.writing-list a{grid-template-columns:110px 1fr}.writing-list a>span:last-child{display:none}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid p:last-child{grid-column:1/-1}}
 @media(max-width:580px){.shell{width:min(calc(100% - 28px),var(--max))}.site-header .wordmark-name{display:none}.hero{min-height:auto;padding-bottom:48px}h1{font-size:clamp(3.7rem,19vw,6rem)}.hero-portrait figcaption{display:grid}.section{padding:78px 0}.practice-card{min-height:260px}.timeline-row{grid-template-columns:1fr;gap:4px}.learning-image-stack{min-height:430px}.stack-large{width:86%}.stack-small{width:62%}.learning-list>div{grid-template-columns:1fr;gap:4px}.project{min-height:330px}.writing-list a{grid-template-columns:1fr;gap:5px}.footer-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.source-card{transition:none}}
+
+
+/* Obra destacada — No tengan miedo */
+.documentary-section{background:#221d1c;color:#f8f1e7;position:relative;overflow:hidden}
+.documentary-section::before{content:"";pointer-events:none;position:absolute;inset:0;background:radial-gradient(ellipse at 5% 5%,rgba(168,127,64,.16),transparent 48%),radial-gradient(ellipse at 90% 90%,rgba(100,47,70,.25),transparent 55%)}
+.documentary-grid{position:relative;display:grid;grid-template-columns:minmax(275px,.75fr) 1.15fr;gap:clamp(40px,8vw,120px);align-items:center}
+.documentary-poster{position:relative;margin:0;aspect-ratio:900/1340;max-width:480px;border:1px solid rgba(210,164,93,.36);border-radius:5px;background:#100f0d;box-shadow:0 35px 85px rgba(0,0,0,.37);overflow:hidden}
+.documentary-poster img{position:relative;z-index:2;width:100%;height:calc(100% - 33px);object-fit:cover;object-position:center}
+.documentary-placeholder{position:absolute;inset:0 0 33px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;padding:36px 20px;background:radial-gradient(circle at 50% 50%,#433324,#0d0c0b 75%);color:#dcbf88;letter-spacing:.08em}
+.documentary-placeholder strong{font-family:var(--serif);font-size:clamp(2.2rem,4vw,4rem);line-height:1.05;font-weight:500;letter-spacing:-.04em}
+.documentary-placeholder span{font-size:.85rem;text-transform:uppercase}
+.documentary-poster figcaption{position:absolute;bottom:0;left:0;right:0;height:33px;z-index:3;padding:8px 12px;color:#cfc0ac;background:#100f0d;font-size:.68rem;letter-spacing:.03em}
+.documentary-section .eyebrow{color:#cdb082}
+.documentary-award{display:inline-flex;max-width:100%;border:1px solid #bca06c;color:#eddbb5;border-radius:999px;padding:9px 15px;font-size:.84rem;font-weight:600;line-height:1.3}
+.documentary-copy h2{margin:24px 0 12px;color:#f5ede2;font-size:clamp(3rem,6.2vw,6.5rem);line-height:.95}
+.documentary-subtitle{font-family:var(--serif);color:#ddb782;font-size:clamp(1.3rem,2vw,1.9rem)}
+.documentary-copy>p:not(.eyebrow):not(.documentary-award):not(.documentary-subtitle):not(.documentary-footnote){color:#d8cec3;max-width:620px;font-size:1.08rem;line-height:1.65}
+.documentary-actions{display:flex;align-items:center;gap:23px;flex-wrap:wrap;margin:29px 0}
+.documentary-button{background:#d0aa6b;color:#181512}
+.documentary-button:hover{background:#e8c790}
+.documentary-link{color:#f0e3d2;font-size:.9rem;font-weight:650}
+.documentary-footnote{margin:23px 0 0;color:#bcae9f;font-size:.8rem;letter-spacing:.03em}
+@media(max-width:900px){.documentary-grid{grid-template-columns:1fr;gap:36px}.documentary-poster{width:min(100%,430px);justify-self:center}.documentary-copy h2{font-size:clamp(3.3rem,10vw,5rem)}}
+@media(max-width:580px){.documentary-section{padding:65px 0}.documentary-poster{max-width:320px}.documentary-actions{align-items:stretch;flex-direction:column;gap:18px}.documentary-button{align-self:flex-start}}
