@@ -120,3 +120,42 @@ h3{font-size:1.3rem;line-height:1.15;letter-spacing:-.03em}
 .documentary-footnote{margin:23px 0 0;color:#bcae9f;font-size:.8rem;letter-spacing:.03em}
 @media(max-width:900px){.documentary-grid{grid-template-columns:1fr;gap:36px}.documentary-poster{width:min(100%,430px);justify-self:center}.documentary-copy h2{font-size:clamp(3.3rem,10vw,5rem)}}
 @media(max-width:580px){.documentary-section{padding:65px 0}.documentary-poster{max-width:320px}.documentary-actions{align-items:stretch;flex-direction:column;gap:18px}.documentary-button{align-self:flex-start}}
+
+
+/* Experiencias verificables: Festival de la Juventud y Altavoz */
+.festival-section{background:var(--cream)}
+.festival-head{grid-template-columns:1.03fr .97fr}
+.festival-head>p{max-width:500px;line-height:1.65}
+.festival-gallery{display:grid;grid-template-columns:1.24fr .76fr .76fr;gap:16px;align-items:stretch}
+.festival-photo{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:19px;overflow:hidden;display:flex;flex-direction:column}
+.festival-photo a{display:block;overflow:hidden;flex:1;min-height:0}
+.festival-photo img{width:100%;height:410px;object-fit:contain;background:#e9e3d9}
+.festival-photo-main img{object-fit:cover;object-position:center center}
+.festival-photo figcaption{padding:15px 16px 17px;color:var(--muted);font-size:.83rem;line-height:1.4;min-height:72px}
+.altavoz-section{background:var(--paper-2)}
+.altavoz-head{display:grid;grid-template-columns:1.1fr .7fr;gap:62px;align-items:end;margin-bottom:38px}
+.altavoz-head h2{font-size:clamp(2.6rem,4.5vw,4.5rem);margin-bottom:0}
+.altavoz-head>p{margin-bottom:6px;color:var(--muted);line-height:1.7}
+.altavoz-gallery{display:grid;grid-template-columns:.8fr 1.2fr;gap:16px;align-items:stretch}
+.altavoz-photo{margin:0;border-radius:22px;overflow:hidden;background:var(--cream)}
+.altavoz-photo a{display:block;overflow:hidden}
+.altavoz-photo img{height:455px;object-fit:cover;object-position:center 43%;width:100%;transition:transform .25s ease}
+.altavoz-photo:hover img{transform:scale(1.015)}
+.altavoz-photo figcaption{padding:12px 18px 16px;color:var(--muted);font-size:.79rem}
+.festival-gallery figure[hidden],.altavoz-gallery figure[hidden]{display:none!important}
+.project-links .pulsar-instagram{display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:10px 14px;background:rgba(255,255,255,.12);line-height:1.4}
+@media(max-width:900px){
+ .festival-head,.altavoz-head{grid-template-columns:1fr;gap:18px}
+ .festival-gallery{grid-template-columns:1fr 1fr}
+ .festival-photo-main{grid-column:1/-1}
+ .festival-photo-main img{height:430px}
+ .festival-photo-document img{height:410px}
+ .altavoz-gallery{grid-template-columns:1fr 1fr}
+}
+@media(max-width:580px){
+ .festival-gallery,.altavoz-gallery{grid-template-columns:1fr}
+ .festival-photo-main{grid-column:auto}
+ .festival-photo img{height:auto;max-height:520px;object-fit:contain}
+ .festival-photo-main img{height:auto;max-height:none;object-fit:cover}
+ .altavoz-photo img{height:auto;max-height:480px}
+}
