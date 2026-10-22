@@ -112,7 +112,8 @@ h3{font-size:1.3rem;line-height:1.15;letter-spacing:-.03em}
 .documentary-award{display:inline-flex;max-width:100%;border:1px solid #bca06c;color:#eddbb5;border-radius:999px;padding:9px 15px;font-size:.84rem;font-weight:600;line-height:1.3}
 .documentary-copy h2{margin:24px 0 12px;color:#f5ede2;font-size:clamp(3rem,6.2vw,6.5rem);line-height:.95}
 .documentary-subtitle{font-family:var(--serif);color:#ddb782;font-size:clamp(1.3rem,2vw,1.9rem)}
-.documentary-copy>p:not(.eyebrow):not(.documentary-award):not(.documentary-subtitle):not(.documentary-footnote){color:#d8cec3;max-width:620px;font-size:1.08rem;line-height:1.65}
+.documentary-copy>p:not(.eyebrow):not(.documentary-award):not(.documentary-subtitle):not(.documentary-footnote):not(.documentary-hook){color:#d8cec3;max-width:620px;font-size:1.08rem;line-height:1.65}
+.documentary-copy>p.documentary-hook{font-family:var(--serif);font-size:clamp(1.35rem,2vw,1.7rem);line-height:1.28;letter-spacing:-.015em;color:#ebc78f;max-width:620px;margin:24px 0}
 .documentary-actions{display:flex;align-items:center;gap:23px;flex-wrap:wrap;margin:29px 0}
 .documentary-button{background:#d0aa6b;color:#181512}
 .documentary-button:hover{background:#e8c790}
