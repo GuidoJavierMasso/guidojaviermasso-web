@@ -304,3 +304,8 @@ h3{font-size:1.3rem;line-height:1.15;letter-spacing:-.03em}
 .site-v3 .v3-interview-link small{font-size:.81rem;line-height:1.45;color:#d4c7ba}
 .site-v3 .v3-interview-arrow{margin-left:auto;font-size:1.1rem;color:#e6c18c}
 @media(max-width:580px){.site-v3 .v3-interview-link{padding:15px;gap:10px}.site-v3 .v3-interview-icon{width:32px;height:32px}}
+
+/* Identificación visual de redes sociales en Contacto */
+.site-v3 .contact-platform{display:inline-flex;align-items:center;gap:12px}
+.site-v3 .contact-icon{width:22px;height:22px;flex:0 0 22px;display:block}
+.site-v3 .contact-links a:hover .contact-platform>span{text-decoration:underline}
