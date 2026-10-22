@@ -28,7 +28,7 @@
   <meta name="twitter:image" content="https://guidojaviermasso.com/assets/guido-javier-masso-retrato.webp">
 
   <link rel="icon" href="/favicon-guido.jpg" type="image/jpeg" sizes="96x96">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=3-20261022">
 
   <script type="application/ld+json">
   {
@@ -100,7 +100,7 @@
   }
   </script>
 </head>
-<body>
+<body class="site-v3">
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header">
@@ -112,10 +112,9 @@
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menú</button>
       <nav id="nav" class="nav" aria-label="Navegación principal">
         <a href="#perfil">Perfil</a>
-        <a href="#trayectoria">Trayectoria</a>
-        <a href="#participacion">Participación</a>
-        <a href="#proyectos">Proyectos</a>
         <a href="#documental">Corto</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#ideas">Notas</a>
         <a href="#fuentes">Prensa</a>
         <a class="nav-contact" href="#contacto">Contacto</a>
@@ -123,322 +122,183 @@
     </div>
   </header>
 
+  
   <main id="contenido">
     <section id="inicio" class="hero">
       <div class="shell hero-grid">
         <div class="hero-copy">
           <p class="overline">Avellaneda · Buenos Aires · Argentina</p>
           <h1>Guido Javier<br><em>Masso</em></h1>
-          <p class="hero-role">Gestión cultural pública · procesos · comunicación · audiovisual</p>
-          <p class="hero-summary">Trabajo en el cruce entre cultura, instituciones, equipos y comunidad. Coordino proyectos, ordeno procesos complejos y convierto problemas concretos en decisiones operativas.</p>
+          <p class="hero-role">Gestión cultural pública · comunicación · audiovisual</p>
+          <p class="hero-summary">Trabajo en el cruce entre cultura, instituciones, equipos y comunidad. Transformo problemas concretos en procesos, acuerdos y proyectos que puedan sostenerse.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#trayectoria">Recorrer trayectoria</a>
-            <a class="button button-quiet" href="#fuentes">Ver fuentes públicas</a>
+            <a class="button button-primary" href="#perfil">Conocer mi trabajo</a>
+            <a class="button button-quiet" href="#documental">Ver obra destacada</a>
           </div>
         </div>
-
         <figure class="hero-portrait">
           <div class="portrait-backdrop" aria-hidden="true"></div>
-          <img src="./assets/guido-javier-masso-retrato.webp" width="1000" height="1000" alt="Retrato profesional para el sitio personal" fetchpriority="high">
-          <figcaption>
-            <span>Coordinación · Cultura · Comunidad</span>
-            <span>Buenos Aires, Argentina</span>
-          </figcaption>
+          <img src="./assets/guido-javier-masso-retrato.webp" width="1000" height="1000" alt="Guido Javier Masso, gestor cultural y licenciado en Artes Digitales" fetchpriority="high">
+          <figcaption><span>Coordinación · Cultura · Comunidad</span><span>Avellaneda, Argentina</span></figcaption>
         </figure>
       </div>
-      <div class="shell hero-index" aria-label="Áreas principales">
-        <span>01 Gestión</span><span>02 Procesos</span><span>03 Comunicación</span><span>04 Audiovisual</span>
+      <div class="shell hero-index" aria-label="Áreas de trabajo">
+        <span>Gestión</span><span>Procesos</span><span>Comunicación</span><span>Audiovisual</span>
+      </div>
+    </section>
+
+    <section id="perfil" class="section v3-profile" aria-labelledby="perfil-title">
+      <div class="shell">
+        <div class="v3-profile-top">
+          <div>
+            <p class="eyebrow">Qué hago</p>
+            <h2 id="perfil-title">Hacer que las cosas funcionen sin perder de vista para quién existen.</h2>
+          </div>
+          <div class="v3-profile-intro">
+            <p>Soy gestor cultural y Licenciado en Artes Digitales por la Universidad Nacional de Quilmes. Trabajo en la Secretaría de Cultura de la Municipalidad de Avellaneda desde 2015 y coordino el Centro Municipal de Arte desde 2021.</p>
+            <p>Me concentro en la gestión institucional, la coordinación de equipos y la sistematización de procesos: vincular personas, organizar recursos y encontrar soluciones operativas.</p>
+          </div>
+        </div>
+        <div class="v3-capabilities" aria-label="Áreas de trabajo">
+          <div><span>01</span><strong>Gestión cultural</strong><p>Instituciones, programación y públicos.</p></div>
+          <div><span>02</span><strong>Procesos</strong><p>Ordenar tareas y circuitos de trabajo.</p></div>
+          <div><span>03</span><strong>Equipos</strong><p>Coordinación, escucha y acuerdos.</p></div>
+          <div><span>04</span><strong>Comunicación</strong><p>Narrativa, contenido y audiovisual.</p></div>
+        </div>
+        <figure class="v3-profile-photo">
+          <img src="./assets/cma-gestion-cultural.webp" width="1600" height="1068" alt="Actividad cultural en el Centro Municipal de Arte de Avellaneda" loading="lazy">
+          <figcaption>Gestión en territorio · Centro Municipal de Arte de Avellaneda · Fotografía: Pablo Jantus / ARSOmnibus</figcaption>
+        </figure>
       </div>
     </section>
 
     <section id="documental" class="section documentary-section" aria-labelledby="documental-title">
       <div class="shell documentary-grid">
         <figure class="documentary-poster">
-          <img src="./assets/no-tengan-miedo-poster.png" alt="Póster oficial de No tengan miedo, cortometraje documental de Guido Javier Masso, premiado como Mejor No Ficción en Lo Que Vendrá 2026 de la Universidad Nacional de Quilmes" width="1024" height="1434" loading="lazy">
-          <figcaption>Póster oficial · Premio a Mejor No Ficción · UNQ 2026</figcaption>
+          <img src="./assets/no-tengan-miedo-poster.png" alt="Póster oficial de No tengan miedo, premiado como Mejor No Ficción en Lo Que Vendrá 2026, Universidad Nacional de Quilmes" width="1024" height="1434" loading="lazy">
+          <figcaption>Arte oficial · Premio a Mejor No Ficción · UNQ 2026</figcaption>
         </figure>
         <div class="documentary-copy">
           <p class="eyebrow">Obra destacada · Audiovisual</p>
           <p class="documentary-award">Premio a Mejor No Ficción · Lo Que Vendrá 2026 · UNQ</p>
           <h2 id="documental-title">No tengan miedo</h2>
-          <p class="documentary-subtitle">Don’t Be Afraid · Cortometraje documental</p>
-          <p>Este cortometraje documental ensayístico fue realizado por Guido Javier Masso como Trabajo Final Integrador de la Licenciatura en Artes Digitales de la Universidad Nacional de Quilmes.</p>
+          <p class="documentary-subtitle">Don’t Be Afraid · Cortometraje documental ensayístico</p>
           <p class="documentary-hook">Un viaje épico. Una serendipia. Una pregunta sobre la humanidad.</p>
-          <p><em>Don’t Be Afraid · No tengan miedo</em> nace de un viaje a Grecia que, en principio, parecía destinado a ser una experiencia personal y turística. Sin embargo, el encuentro con Alexandros, un músico callejero, arquitecto y capitán griego-francés, transforma el recorrido en una búsqueda más profunda.</p>
-          <p>A través de su historia, el corto propone una relectura contemporánea del mito de Perseo y Medusa: Medusa como metáfora del miedo que paraliza y Perseo como figura de quien necesita herramientas para atravesarlo. La cámara funciona entonces como un escudo-reflejo: una forma de mirar el miedo, el prejuicio y el deseo sin quedar petrificado.</p>
-          <p>Entre calles de Atenas, conversaciones en un hostel, sueños compartidos y tensiones geopolíticas, la obra se pregunta qué vida dejamos de vivir por miedo, qué etiquetas usamos para mirar a los demás y qué puede aportar cada persona al pulso común de la humanidad.</p>
+          <p>Realizado como Trabajo Final Integrador de la Licenciatura en Artes Digitales de la Universidad Nacional de Quilmes. Un viaje a Grecia y el encuentro con Alexandros abren una pregunta sobre el miedo, los prejuicios y la vida que dejamos de vivir.</p>
+          <details class="v3-synopsis">
+            <summary>Leer sinopsis completa</summary>
+            <div>
+              <p>El viaje, que parecía destinado a ser una experiencia personal y turística, se transforma al conocer a Alexandros, músico callejero, arquitecto y capitán griego-francés.</p>
+              <p>A través de su historia, el corto propone una relectura contemporánea del mito de Perseo y Medusa: Medusa como metáfora del miedo que paraliza y Perseo como figura de quien necesita herramientas para atravesarlo. La cámara funciona como un escudo-reflejo, una forma de mirar el miedo, el prejuicio y el deseo sin quedar petrificado.</p>
+              <p>Entre calles de Atenas, conversaciones en un hostel, sueños compartidos y tensiones geopolíticas, la obra pregunta qué vida dejamos de vivir por miedo, qué etiquetas usamos para mirar a los demás y qué puede aportar cada persona al pulso común de la humanidad.</p>
+            </div>
+          </details>
           <div class="documentary-actions">
-            <a class="button documentary-button" href="https://youtu.be/_ss8rcgkn0o" target="_blank" rel="noopener noreferrer">Ver video en YouTube ↗</a>
-            <a class="documentary-link" href="https://www.youtube.com/live/SoQ7aVaS3Zg" target="_blank" rel="noopener noreferrer">Entrevista en UNQ Streaming ↗</a>
+            <button class="button documentary-button" type="button" data-video-reveal aria-expanded="false" aria-controls="film-player">Reproducir el corto ▶</button>
+            <a class="documentary-link" href="https://youtu.be/_ss8rcgkn0o" target="_blank" rel="noopener noreferrer">Abrir en YouTube ↗</a>
           </div>
-          <p class="documentary-footnote">Argentina · 2026 · Duración: 7 min 21 s · Rodado en Grecia</p>
+          <div id="film-player" class="film-player" hidden></div>
+          <p class="documentary-footnote">Argentina · 2026 · 7 min 21 s · Rodado en Grecia</p>
         </div>
       </div>
     </section>
 
-    <section id="perfil" class="section intro-section">
-      <div class="shell intro-grid">
-        <div>
-          <p class="eyebrow">Perfil</p>
-          <h2>Hacer que las cosas funcionen sin perder de vista para quién existen.</h2>
-        </div>
-        <div class="intro-copy">
-          <p class="large-copy">Soy gestor cultural y Licenciado en Artes Digitales por la Universidad Nacional de Quilmes. Desde 2015 trabajo en la gestión cultural pública de la Municipalidad de Avellaneda y desde 2021 coordino el Centro Municipal de Arte.</p>
-          <p>En la práctica, una parte central de mi trabajo consiste en <strong>sistematizar procesos</strong>, ordenar información, coordinar equipos y trabajar sobre conflictos entre necesidades, tiempos, recursos y personas. Me interesa la construcción institucional cuando puede volverse una herramienta concreta para mejorar experiencias y ampliar posibilidades.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section practice-section" aria-labelledby="practica-title">
+    <section id="trayectoria" class="section timeline-section" aria-labelledby="trayectoria-title">
       <div class="shell">
-        <p class="eyebrow">Cómo trabajo</p>
-        <div class="practice-heading">
-          <h2 id="practica-title">Una práctica que mezcla gestión, escucha y estructura.</h2>
-          <p>No pienso estas capacidades como especialidades separadas: suelen aparecer juntas frente a un mismo problema.</p>
+        <div class="section-head v3-timeline-head">
+          <div><p class="eyebrow">Trayectoria</p><h2 id="trayectoria-title">Una historia, diferentes formas de construir.</h2></div>
+          <p>Explorá el recorrido según el ámbito. La gestión pública, la participación colectiva y el audiovisual aparecen conectados, sin ser lo mismo.</p>
         </div>
-        <div class="practice-grid">
-          <article class="practice-card card-a">
-            <span class="card-no">01</span>
-            <h3>Gestión cultural pública</h3>
-            <p>Programación, producción, públicos, instituciones, recursos y articulación con actores diversos.</p>
-          </article>
-          <article class="practice-card card-b">
-            <span class="card-no">02</span>
-            <h3>Sistematización de procesos</h3>
-            <p>Convertir tareas dispersas en circuitos claros, documentables y sostenibles para los equipos.</p>
-          </article>
-          <article class="practice-card card-c">
-            <span class="card-no">03</span>
-            <h3>Resolución de conflictos</h3>
-            <p>Leer intereses, restricciones y tensiones para construir acuerdos operativos y decisiones posibles.</p>
-          </article>
-          <article class="practice-card card-d">
-            <span class="card-no">04</span>
-            <h3>Comunicación y audiovisual</h3>
-            <p>Narrativa, contenidos, producción audiovisual y herramientas digitales al servicio de proyectos concretos.</p>
-          </article>
+        <div class="timeline-filters" role="group" aria-label="Filtrar trayectoria">
+          <button type="button" class="timeline-filter is-active" data-filter="todos" aria-pressed="true">Todo</button>
+          <button type="button" class="timeline-filter" data-filter="gestion" aria-pressed="false">Gestión</button>
+          <button type="button" class="timeline-filter" data-filter="participacion" aria-pressed="false">Participación</button>
+          <button type="button" class="timeline-filter" data-filter="audiovisual" aria-pressed="false">Audiovisual</button>
+          <button type="button" class="timeline-filter" data-filter="internacional" aria-pressed="false">Internacional</button>
         </div>
-      </div>
-    </section>
-
-    <section class="section photo-story">
-      <div class="shell photo-story-grid">
-        <figure class="photo-main">
-          <img src="./assets/cma-gestion-cultural.webp" width="1600" height="1068" alt="Actividad en un espacio de exhibición del Centro Municipal de Arte" loading="lazy">
-          <figcaption>Gestión cultural en contexto · Centro Municipal de Arte de Avellaneda</figcaption>
-        </figure>
-        <div class="photo-story-copy">
-          <p class="eyebrow">Territorio</p>
-          <h2>La gestión se aprende haciendo.</h2>
-          <p>Once años de trabajo en cultura pública me dieron una formación difícil de reducir a un cargo: producción, programación, atención de públicos, coordinación, comunicación, negociación, crisis, montaje y trabajo cotidiano con equipos.</p>
-          <p class="photo-credit">Fotografía: Pablo Jantus / ARSOmnibus</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="trayectoria" class="section timeline-section">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Trayectoria</p>
-            <h2>Hitos que fueron ampliando el campo de trabajo.</h2>
-          </div>
-          <p>Una síntesis cronológica. Cada etapa suma herramientas que hoy conviven en la práctica profesional.</p>
-        </div>
-
+        <p id="timeline-count" class="timeline-count" aria-live="polite">11 hitos en el recorrido</p>
         <div class="timeline">
-          <article class="timeline-row">
-            <time>2015</time>
-            <div><h3>Municipalidad de Avellaneda</h3><p>Inicio de la trayectoria profesional en la Secretaría de Cultura, con experiencia progresiva en producción, gestión y coordinación.</p></div>
-          </article>
-          <article class="timeline-row">
-            <time>2018</time>
-            <div><h3>Multiespacio Cultural de Avellaneda</h3><p>Coordinación general del Multiespacio Cultural (MEC), con propuestas de biblioteca artística, turismo cultural, talleres y difusión de la producción local. Una <a href="https://elnumeral.com/amp/2018/03/15/la-democratizacion-del-arte-lo-mas-valioso-este-municipio/" target="_blank" rel="noopener noreferrer">entrevista de El Numeral publicada en marzo de 2018 ↗</a> documenta esta etapa.</p></div>
-          </article>
-          <article class="timeline-row">
-            <time>Junio de 2018</time>
-            <div><h3>Frente Cultural María Remedios del Valle · La Capitana</h3><p>Fundación en junio de 2018 como Frente Cultural María Remedios del Valle; posteriormente, el espacio pasó a llamarse La Capitana. Responsable de comunicación desde su fundación hasta 2026. <a href="https://www.instagram.com/capitanadelvalle/" target="_blank" rel="noopener noreferrer">Instagram de La Capitana ↗</a></p></div>
-          </article>
-          <article class="timeline-row">
-            <time>2020</time>
-            <div><h3>Séptimo Films</h3><p>Desarrollo de una productora/proyecto audiovisual con trabajos de videoclips, cortometrajes, fotografía, redes y comunicación.</p></div>
-          </article>
-          <article class="timeline-row">
-            <time>2021</time>
-            <div><h3>Centro Municipal de Arte</h3><p>Asunción de la Coordinación General del CMA de Avellaneda, integrando gestión de equipos, programación, producción y operación institucional.</p></div>
-          </article>
-          <article class="timeline-row">
-            <time>2024–2025</time>
-            <div><h3>Potencia Argentina</h3><p>Participación en la primera cohorte de formación federal y multipartidaria para liderazgos emergentes. Una experiencia que amplió redes, herramientas de liderazgo público y trabajo con personas de distintos espacios y provincias.</p></div>
-          </article>
-          <article class="timeline-row">
-            <time>2026</time>
-            <div><h3>Licenciatura en Artes Digitales · UNQ</h3><p>Graduación en la Universidad Nacional de Quilmes. El Trabajo Final Integrador fue el documental <em>Don’t Be Afraid · No tengan miedo</em>.</p></div>
-          </article>
-          <article class="timeline-row timeline-current">
-            <time>2026</time>
-            <div><h3>Festival Internacional de la Juventud · Ekaterimburgo</h3><p>Selección para integrar la participación argentina en el festival internacional y presentar un recorrido que conecta audiovisual, gestión cultural y el desarrollo de Pulsar Humano.</p></div>
-          </article>
+          <article class="timeline-row" data-track="participacion"><time>Desde los 12 años</time><div><h3>Centro de Estudiantes · ENSPA</h3><p>Participación desde la escuela en Avellaneda: vocal, tesorero y, posteriormente, presidente del Centro de Estudiantes.</p></div></article>
+          <article class="timeline-row" data-track="gestion"><time>2015</time><div><h3>Municipalidad de Avellaneda</h3><p>Comienzo de la experiencia profesional en la Secretaría de Cultura.</p></div></article>
+          <article class="timeline-row" data-track="gestion"><time>2018</time><div><h3>Multiespacio Cultural de Avellaneda</h3><p>Coordinación general del MEC. <a href="https://elnumeral.com/amp/2018/03/15/la-democratizacion-del-arte-lo-mas-valioso-este-municipio/" target="_blank" rel="noopener noreferrer">Entrevista en El Numeral ↗</a></p></div></article>
+          <article class="timeline-row" data-track="participacion"><time>Junio de 2018 – 2026</time><div><h3>Frente Cultural María Remedios del Valle · La Capitana</h3><p>Comunicación desde la fundación del Frente Cultural en junio de 2018 y durante su evolución hacia La Capitana. <a href="https://www.instagram.com/capitanadelvalle/" target="_blank" rel="noopener noreferrer">@capitanadelvalle ↗</a></p></div></article>
+          <article class="timeline-row" data-track="audiovisual"><time>2020</time><div><h3>Séptimo Films</h3><p>Producción de videoclips, cortometrajes, fotografía y comunicación audiovisual.</p></div></article>
+          <article class="timeline-row" data-track="audiovisual"><time>2020–2022</time><div><h3>Altavoz · Televisión Pública</h3><p>Participación en el programa y experiencia frente a cámara. <a href="#altavoz">Ver fotografías ↓</a></p></div></article>
+          <article class="timeline-row" data-track="gestion"><time>2021</time><div><h3>Centro Municipal de Arte</h3><p>Coordinación General del CMA de Avellaneda, con trabajo cotidiano en programación, equipos y operación institucional.</p></div></article>
+          <article class="timeline-row" data-track="participacion"><time>2024–2025</time><div><h3>Potencia Argentina</h3><p>Experiencia de formación federal y multipartidaria. <a href="https://potenciaargentina.org/" target="_blank" rel="noopener noreferrer">Conocer el programa ↗</a></p></div></article>
+          <article class="timeline-row" data-track="audiovisual"><time>2026</time><div><h3>Licenciatura en Artes Digitales · UNQ</h3><p>Graduación y realización del documental <a href="#documental"><em>No tengan miedo</em> ↑</a>.</p></div></article>
+          <article class="timeline-row" data-track="internacional"><time>Septiembre de 2026</time><div><h3>Festival Internacional de la Juventud · Ekaterimburgo</h3><p>Participación en la delegación argentina. <a href="#festival-juventud-2026">Ver registro fotográfico ↓</a></p></div></article>
+          <article class="timeline-row timeline-current" data-track="participacion"><time>En desarrollo</time><div><h3>Pulsar Humano</h3><p>Proyecto social y tecnológico para conectar necesidades con personas y organizaciones que pueden ayudar. <a href="https://www.instagram.com/pulsumanismo/" target="_blank" rel="noopener noreferrer">@pulsumanismo ↗</a></p></div></article>
         </div>
       </div>
     </section>
 
-    <section id="participacion" class="section participation-section" aria-labelledby="participacion-title">
-      <div class="shell">
-        <div class="section-head participation-head">
-          <div>
-            <p class="eyebrow">Participación y construcción colectiva</p>
-            <h2 id="participacion-title">De la representación estudiantil a los proyectos comunitarios.</h2>
-          </div>
-          <p>Mi participación comenzó en la escuela y tomó distintas formas con el tiempo: organización estudiantil, comunicación político-cultural, formación federal y desarrollo de iniciativas sociales. Son experiencias vinculadas, pero con responsabilidades y propósitos diferentes.</p>
-        </div>
-        <div class="participation-grid">
-          <article class="participation-card">
-            <span class="participation-when">Desde los 12 años</span>
-            <h3>Centro de Estudiantes · ENSPA</h3>
-            <p>Primeras experiencias de representación y organización estudiantil en Avellaneda. Desempeñé responsabilidades como vocal, tesorero y, posteriormente, presidente del Centro de Estudiantes.</p>
-          </article>
-          <article class="participation-card">
-            <span class="participation-when">Junio de 2018 – 2026</span>
-            <h3>Frente Cultural María Remedios del Valle · La Capitana</h3>
-            <p>El espacio nació en junio de 2018 como Frente Cultural María Remedios del Valle y más adelante adoptó el nombre La Capitana. Estuve a cargo de su comunicación desde la fundación hasta 2026.</p>
-            <a href="https://www.instagram.com/capitanadelvalle/" target="_blank" rel="noopener noreferrer">Instagram · @capitanadelvalle ↗</a>
-          </article>
-          <article class="participation-card">
-            <span class="participation-when">2024–2025</span>
-            <h3>Potencia Argentina</h3>
-            <p>Formación política federal y multipartidaria. Un ámbito para intercambiar experiencias con personas de distintas provincias, espacios y perspectivas.</p>
-            <a href="https://potenciaargentina.org/" target="_blank" rel="noopener noreferrer">Conocer Potencia Argentina ↗</a>
-          </article>
-          <article class="participation-card">
-            <span class="participation-when">En desarrollo</span>
-            <h3>Pulsar Humano</h3>
-            <p>Iniciativa social y tecnológica para vincular necesidades concretas con personas, organizaciones y comunidades que pueden aportar capacidades y recursos. Se presenta como un proyecto propio, no como una extensión partidaria.</p>
-            <a href="https://www.instagram.com/pulsumanismo/" target="_blank" rel="noopener noreferrer">Instagram · @pulsumanismo ↗</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="festival-juventud-2026" class="section festival-section" aria-labelledby="festival-title">
-      <div class="shell">
-        <div class="section-head festival-head">
-          <div>
-            <p class="eyebrow">Cooperación internacional · 2026</p>
-            <h2 id="festival-title">De Avellaneda a Ekaterimburgo.</h2>
-          </div>
-          <p>Participé del Festival Internacional de la Juventud 2026 en Rusia, del 11 al 17 de septiembre, como integrante de la delegación argentina. Un encuentro entre jóvenes de distintos países para compartir experiencias y construir vínculos.</p>
-        </div>
-        <div class="festival-gallery">
-          <figure class="festival-photo festival-photo-main">
-            <a href="./assets/festival-juventud-2026-banderas.webp" target="_blank" aria-label="Ampliar foto del encuentro de participantes">
-              <img src="./assets/festival-juventud-2026-banderas.webp" alt="Foto grupal de participantes del Festival Internacional de la Juventud 2026 en Ekaterimburgo, con banderas de países latinoamericanos" width="960" height="980" loading="lazy" onerror="this.closest('figure').hidden=true">
-            </a>
-            <figcaption>Encuentro de participantes latinoamericanos en Ekaterimburgo.</figcaption>
-          </figure>
-          <figure class="festival-photo festival-photo-document">
-            <a href="./assets/festival-juventud-2026-certificado.webp" target="_blank" aria-label="Ampliar certificado de participación">
-              <img src="./assets/festival-juventud-2026-certificado.webp" alt="Certificado de participación emitido a nombre de Masso Guido Javier por el Festival Internacional de la Juventud 2026" width="1241" height="1754" loading="lazy" onerror="this.closest('figure').hidden=true">
-            </a>
-            <figcaption>Certificado oficial de participación.</figcaption>
-          </figure>
-          <figure class="festival-photo festival-photo-document">
-            <a href="./assets/festival-juventud-2026-delegacion.webp" target="_blank" aria-label="Ampliar gráfica de la delegación argentina">
-              <img src="./assets/festival-juventud-2026-delegacion.webp" alt="Pieza gráfica de la delegación argentina al Festival Internacional de la Juventud 2026: Buenos Aires y Ekaterimburgo" width="1092" height="1440" loading="lazy" onerror="this.closest('figure').hidden=true">
-            </a>
-            <figcaption>Presentación gráfica de la delegación argentina.</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section learning-section">
-      <div class="shell learning-grid">
-        <div class="learning-image-stack">
-          <figure class="stack-large"><img src="./assets/unq-streaming-noche.webp" width="1600" height="1067" alt="Mesa de conversación y streaming en una actividad universitaria" loading="lazy"></figure>
-          <figure class="stack-small"><img src="./assets/cma-muestra.webp" width="1600" height="1067" alt="Encuentro durante una muestra de artes visuales" loading="lazy"><figcaption>Fotografía: Pablo Jantus / ARSOmnibus</figcaption></figure>
-        </div>
-        <div class="learning-copy">
-          <p class="eyebrow">Aprendizaje</p>
-          <h2>No todo lo que forma aparece en un título.</h2>
-          <div class="learning-list">
-            <div><strong>Estado y gestión</strong><p>Aprender a producir con reglas, recursos finitos, responsabilidades públicas y necesidades reales.</p></div>
-            <div><strong>Organización colectiva</strong><p>Entender cómo se construyen pertenencia, acuerdos, identidad y capacidad de acción con otros.</p></div>
-            <div><strong>Potencia Argentina</strong><p>Exponerse a miradas políticas y territoriales distintas, trabajar con desacuerdos y construir lenguaje común.</p></div>
-            <div><strong>Universidad pública</strong><p>Sumar marcos conceptuales, herramientas audiovisuales, tecnología y pensamiento crítico a la experiencia profesional.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="proyectos" class="section projects-section">
+    <section id="proyectos" class="section projects-section" aria-labelledby="proyectos-title">
       <div class="shell">
         <div class="section-head section-head-light">
-          <div><p class="eyebrow">Proyectos</p><h2>Espacios donde las ideas se vuelven práctica.</h2></div>
-          <p>Gestión, audiovisual, experimentación digital y proyectos propios.</p>
+          <div><p class="eyebrow">Proyectos</p><h2 id="proyectos-title">Espacios donde las ideas se vuelven práctica.</h2></div>
+          <p>Experiencias institucionales, producción audiovisual e iniciativas propias.</p>
         </div>
-
-        <div class="projects-grid">
+        <div class="projects-grid v3-projects">
           <article class="project project-featured">
-            <div class="project-number">01</div>
-            <div class="project-copy"><p class="project-type">Gestión cultural pública</p><h3>Centro Municipal de Arte</h3><p>Coordinación general de un espacio cultural público de Avellaneda con artes visuales, espectáculos, actividades, producción y comunidad.</p></div>
-            <a href="https://www.mda.gob.ar/" target="_blank" rel="noopener noreferrer" aria-label="Municipalidad de Avellaneda">Referencia ↗</a>
+            <div class="project-number">01 / Gestión cultural pública</div>
+            <div class="project-copy"><h3>Centro Municipal de Arte</h3><p>Coordinación de un espacio público de Avellaneda: programación, equipos, públicos y procesos para sostener una actividad cultural diversa.</p></div>
+            <a href="https://www.mda.gob.ar/noticias/el-centro-municipal-de-arte-cumplio-11-anos-y-lo-festejo-en-comunidad/" target="_blank" rel="noopener noreferrer">Fuente municipal ↗</a>
           </article>
-
           <article class="project">
-            <div class="project-number">02</div>
-            <div class="project-copy"><p class="project-type">Productora audiovisual</p><h3>Séptimo Films</h3><p>Proyecto de producción audiovisual con videoclips, cortometrajes, fotografía, redes sociales y asesoramiento comunicacional.</p></div>
-            <div class="project-links"><a href="https://guidojaviermasso.github.io/SeptimoFilms/index.html" target="_blank" rel="noopener noreferrer">Sitio ↗</a><a href="https://www.instagram.com/septimo.films.7/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
+            <div class="project-number">02 / Tecnología social</div>
+            <div class="project-copy"><h3>Pulsar Humano</h3><p>Plataforma en desarrollo para articular ayuda, habilidades y recursos entre personas, organizaciones y comunidades, sin orientación partidaria.</p></div>
+            <div class="project-links"><a class="pulsar-instagram" href="https://www.instagram.com/pulsumanismo/" target="_blank" rel="noopener noreferrer">Instagram · @pulsumanismo ↗</a><span class="project-status">En desarrollo</span></div>
           </article>
-
           <article class="project">
-            <div class="project-number">03</div>
-            <div class="project-copy"><p class="project-type">Documental · Premio a Mejor No Ficción</p><h3>Don’t Be Afraid · No tengan miedo</h3><p>Trabajo Final Integrador de la Licenciatura en Artes Digitales de la UNQ. A partir de un viaje a Grecia y del encuentro con Alexandros, propone una relectura del mito de Perseo y Medusa para explorar el miedo, el prejuicio y nuestra relación con los demás. En 2026 recibió el premio a <strong>Mejor No Ficción</strong> en Lo Que Vendrá, de la Universidad Nacional de Quilmes.</p></div>
-            <div class="project-links"><a href="https://www.youtube.com/live/SoQ7aVaS3Zg" target="_blank" rel="noopener noreferrer">Entrevista UNQ Streaming ↗</a><a href="#documental">Ver obra destacada ↓</a><a href="https://agencia.unq.edu.ar/?p=38875" target="_blank" rel="noopener noreferrer">Nota UNQ ↗</a></div>
-          </article>
-
-          <article class="project">
-            <div class="project-number">04</div>
-            <div class="project-copy"><p class="project-type">Tecnología y comunidad</p><h3>Pulsar Humano</h3><p>Proyecto en desarrollo para conectar necesidades concretas con capacidades disponibles entre personas, instituciones y comunidades.</p></div>
-            <div class="project-links"><a class="pulsar-instagram" href="https://www.instagram.com/pulsumanismo/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el Instagram de Pulsumanismo, proyecto Pulsar Humano">Instagram de Pulsumanismo · @pulsumanismo ↗</a><span class="project-status">En desarrollo</span></div>
+            <div class="project-number">03 / Producción audiovisual</div>
+            <div class="project-copy"><h3>Séptimo Films</h3><p>Proyecto de producción de cortos, videoclips, fotografía y contenidos audiovisuales.</p></div>
+            <div class="project-links"><a href="https://guidojaviermasso.github.io/SeptimoFilms/index.html" target="_blank" rel="noopener noreferrer">Archivo web ↗</a><a href="https://www.instagram.com/septimo.films.7/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section media-section">
-      <div class="shell media-grid">
-        <div class="media-copy">
-          <p class="eyebrow">Comunicación</p>
-          <h2>También aprendí a pensar desde una cámara, un micrófono y una mesa compartida.</h2>
-          <p>Mi recorrido incluye producción audiovisual, conducción en UNQ Streaming, participación en <em>Altavoz</em> de la Televisión Pública entre 2020 y 2022 y experiencias donde comunicación y cultura funcionan como herramientas para abrir conversaciones. En 2026 volví a UNQ Streaming para conversar sobre <em>No tengan miedo</em>, su reconocimiento en Lo Que Vendrá y la experiencia internacional en Rusia.</p>
-        </div>
-        <figure class="media-image"><img src="./assets/unq-streaming-estudio.webp" width="1600" height="1066" alt="Producción fotográfica en estudio vinculada a un proyecto universitario" loading="lazy"></figure>
-      </div>
-    </section>
-
-    <section id="altavoz" class="section altavoz-section" aria-labelledby="altavoz-title">
+    <section id="experiencias" class="section experiences-section" aria-labelledby="experiencias-title">
       <div class="shell">
-        <div class="altavoz-head">
-          <div>
-            <p class="eyebrow">Experiencia audiovisual · TV Pública · 2020–2022</p>
-            <h2 id="altavoz-title">Altavoz: una experiencia frente a cámara y con otros.</h2>
-          </div>
-          <p>Entre 2020 y 2022 participé en <em>Altavoz</em>, de la Televisión Pública. Una etapa vinculada al trabajo audiovisual, la conversación y la construcción colectiva de contenidos.</p>
+        <div class="section-head">
+          <div><p class="eyebrow">Experiencias en imágenes</p><h2 id="experiencias-title">Algunos encuentros dejan registro.</h2></div>
+          <p>Dos experiencias de momentos distintos: cooperación internacional y comunicación audiovisual.</p>
         </div>
-        <div class="altavoz-gallery">
-          <figure class="altavoz-photo">
-            <a href="./assets/altavoz-tv-publica-2020-2022-01.webp" target="_blank" aria-label="Ampliar foto del equipo de Altavoz">
-              <img src="./assets/altavoz-tv-publica-2020-2022-01.webp" alt="Guido Javier Masso junto a participantes de Altavoz en el estudio de la Televisión Pública" width="1338" height="1800" loading="lazy" onerror="this.closest('figure').hidden=true">
+        <div id="festival-juventud-2026" class="v3-story">
+          <div class="v3-story-head">
+            <div><span class="v3-kicker">01 / Internacional · 2026</span><h3>De Avellaneda a Ekaterimburgo.</h3></div>
+            <p>Festival Internacional de la Juventud 2026, del 11 al 17 de septiembre. Participé como integrante de la delegación argentina.</p>
+          </div>
+          <div class="festival-gallery" data-gallery="rusia">
+            <figure class="festival-photo festival-photo-main"><a href="./assets/festival-juventud-2026-banderas.webp" target="_blank" data-lightbox><img src="./assets/festival-juventud-2026-banderas.webp" width="960" height="980" alt="Participantes latinoamericanos del festival en Ekaterimburgo con banderas de diferentes países" loading="lazy"></a><figcaption>Encuentro de participantes latinoamericanos.</figcaption></figure>
+            <figure class="festival-photo festival-photo-document"><a href="./assets/festival-juventud-2026-certificado.webp" target="_blank" data-lightbox><img src="./assets/festival-juventud-2026-certificado.webp" width="1241" height="1754" alt="Certificado de participación emitido a Guido Javier Masso por el Festival Internacional de la Juventud 2026" loading="lazy"></a><figcaption>Certificado oficial de participación.</figcaption></figure>
+            <figure class="festival-photo festival-photo-document"><a href="./assets/festival-juventud-2026-delegacion.webp" target="_blank" data-lightbox><img src="./assets/festival-juventud-2026-delegacion.webp" width="1092" height="1440" alt="Gráfica de Guido Javier Masso para la delegación argentina al festival 2026" loading="lazy"></a><figcaption>Delegación argentina.</figcaption></figure>
+          </div>
+        </div>
+        <div id="altavoz" class="v3-story">
+          <div class="v3-story-head">
+            <div><span class="v3-kicker">02 / Televisión Pública · 2020–2022</span><h3>Altavoz: conversar frente a cámara.</h3></div>
+            <p>Participé del programa <em>Altavoz</em> entre 2020 y 2022. Una experiencia de diálogo, producción y trabajo audiovisual.</p>
+          </div>
+          <div class="altavoz-gallery" data-gallery="altavoz">
+            <figure class="altavoz-photo"><a href="./assets/altavoz-tv-publica-2020-2022-01.webp" target="_blank" data-lightbox><img src="./assets/altavoz-tv-publica-2020-2022-01.webp" width="1338" height="1800" alt="Guido Javier Masso junto a participantes de Altavoz en el estudio de la Televisión Pública" loading="lazy"></a><figcaption>Altavoz · Estudio de Televisión Pública.</figcaption></figure>
+            <figure class="altavoz-photo"><a href="./assets/altavoz-tv-publica-2020-2022-02.webp" target="_blank" data-lightbox><img src="./assets/altavoz-tv-publica-2020-2022-02.webp" width="1800" height="1200" alt="Guido Javier Masso hablando con micrófono en el set de Altavoz" loading="lazy"></a><figcaption>Durante una grabación del programa.</figcaption></figure>
+          </div>
+        </div>
+        <div id="audiovisuales" class="v3-audiovisuales">
+          <div class="v3-videos-head"><p class="eyebrow">En video</p><h3>Programas y producción audiovisual.</h3></div>
+          <div class="v3-video-grid">
+            <a class="v3-video-card" href="https://www.youtube.com/playlist?list=PLXSZLRPED2CB30uNBQRaCMtsWI5wsUdef" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/unq-streaming-estudio.webp" width="1600" height="1066" loading="lazy" alt="Producción de contenido y conversación en estudio">
+              <span>Programa · Playlist de episodios</span><strong>Sobre las cartas la mesa</strong><em>Ver programas en YouTube ↗</em>
             </a>
-            <figcaption>Altavoz · Televisión Pública.</figcaption>
-          </figure>
-          <figure class="altavoz-photo">
-            <a href="./assets/altavoz-tv-publica-2020-2022-02.webp" target="_blank" aria-label="Ampliar foto en grabación de Altavoz">
-              <img src="./assets/altavoz-tv-publica-2020-2022-02.webp" alt="Guido Javier Masso con micrófono durante una grabación de Altavoz, junto a otros participantes" width="1800" height="1200" loading="lazy" onerror="this.closest('figure').hidden=true">
+            <a class="v3-video-card" href="https://www.youtube.com/playlist?list=PLVEO9pffa9Q4" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/unq-streaming-noche.webp" width="1600" height="1067" loading="lazy" alt="Producción audiovisual en un espacio universitario">
+              <span>Archivo audiovisual · YouTube</span><strong>Mis audiovisuales</strong><em>Explorar playlist ↗</em>
             </a>
-            <figcaption>Durante una grabación del programa · 2020–2022.</figcaption>
-          </figure>
+          </div>
+          <p class="v3-video-note">Las listas se abren en YouTube. El enlace de «Mis audiovisuales» se incorporó tal como fue compartido.</p>
         </div>
       </div>
     </section>
@@ -446,12 +306,12 @@
     <section id="ideas" class="section writing-section">
       <div class="shell">
         <div class="section-head">
-          <div><p class="eyebrow">Notas y publicaciones</p><h2>Ideas, cultura y construcción de comunidad.</h2></div>
-          <p>Artículos originales publicados en Menú Criollo y una republicación en Agro Cordobés.</p>
+          <div><p class="eyebrow">Notas y publicaciones</p><h2>Ideas que se convierten en texto.</h2></div>
+          <p>Tres artículos originales publicados en Menú Criollo.</p>
         </div>
         <div class="writing-list">
-          <a href="https://menucriollolacapitana.wordpress.com/2025/05/02/del-muro-al-puente-francisco-peron-y-el-gallego-alvarez-la-politica-del-nosotros/" target="_blank" rel="noopener noreferrer"><span class="writing-date">02.05.2025</span><strong>Del muro al puente: Francisco, Perón y el Gallego Álvarez — La política del nosotros</strong><span>Menú Criollo ↗</span></a>
           <a href="https://menucriollolacapitana.wordpress.com/2025/07/04/nacer-en-tiempos-hostiles/" target="_blank" rel="noopener noreferrer"><span class="writing-date">04.07.2025</span><strong>Nacer en tiempos hostiles</strong><span>Menú Criollo ↗</span></a>
+          <a href="https://menucriollolacapitana.wordpress.com/2025/05/02/del-muro-al-puente-francisco-peron-y-el-gallego-alvarez-la-politica-del-nosotros/" target="_blank" rel="noopener noreferrer"><span class="writing-date">02.05.2025</span><strong>Del muro al puente: Francisco, Perón y el Gallego Álvarez — La política del nosotros</strong><span>Menú Criollo ↗</span></a>
           <a href="https://menucriollolacapitana.wordpress.com/2025/03/21/justicia-y-corrupcion-una-sociedad-en-decadencia/" target="_blank" rel="noopener noreferrer"><span class="writing-date">21.03.2025</span><strong>Justicia y corrupción: una sociedad en decadencia</strong><span>Menú Criollo ↗</span></a>
         </div>
       </div>
@@ -461,34 +321,35 @@
       <div class="shell">
         <div class="section-head">
           <div><p class="eyebrow">Prensa y fuentes públicas</p><h2>Una biografía que pueda verificarse.</h2></div>
-          <p>Este sitio funciona como fuente propia, pero enlaza referencias externas para respaldar formación, actividad y trayectoria.</p>
+          <p>Fuentes que documentan formación, trabajo e iniciativas. Destaco algunas y dejo el archivo completo disponible.</p>
         </div>
-        <div class="sources-grid">
-          <a class="source-card" href="https://agencia.unq.edu.ar/?p=38875" target="_blank" rel="noopener noreferrer"><span>Agencia de Noticias Científicas UNQ · 2026</span><strong>Perfil sobre graduación, documental, CMA, Potencia Argentina y participación en el Festival Internacional de la Juventud.</strong><em>Leer fuente ↗</em></a>
-          <a class="source-card" href="https://elnumeral.com/amp/2018/03/15/la-democratizacion-del-arte-lo-mas-valioso-este-municipio/" target="_blank" rel="noopener noreferrer"><span>El Numeral · Entrevista · 15.03.2018</span><strong>«La democratización del arte es lo más valioso que tiene este municipio». Entrevista sobre la coordinación del Multiespacio Cultural de Avellaneda.</strong><em>Leer entrevista ↗</em></a>
-          <a class="source-card" href="https://www.youtube.com/live/SoQ7aVaS3Zg" target="_blank" rel="noopener noreferrer"><span>UNQ Streaming · 2026</span><strong>Entrevista audiovisual sobre No tengan miedo, Lo Que Vendrá y el recorrido reciente.</strong><em>Ver entrevista ↗</em></a>
-          <a class="source-card" href="https://avellanedahoy.com.ar/nota/24339/de-avellaneda-a-rusia-un-gestor-cultural-local-fue-seleccionado-para-participar-del-festival-internacional-de-la-juventud-2026/" target="_blank" rel="noopener noreferrer"><span>Avellaneda Hoy · 2026</span><strong>De Avellaneda a Rusia: selección para el Festival Internacional de la Juventud 2026.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://www.infocielo.com/sociedad/del-aula-al-mapa-global-estudio-en-la-unq-y-participara-del-festival-internacional-de-la-juventud-en-rusia" target="_blank" rel="noopener noreferrer"><span>Infocielo · 2026</span><strong>Del aula al mapa global: formación en la UNQ, gestión cultural y participación internacional.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://diariolaciudadavellaneda.com.ar/de-avellaneda-a-rusia-un-gestor-cultural-local-fue-seleccionado-para-participar-del-festival-internacional-de-la-juventud-2026/" target="_blank" rel="noopener noreferrer"><span>La Ciudad Avellaneda · 2026</span><strong>Trayectoria cultural pública y participación en el encuentro internacional de Ekaterimburgo.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://somoscitrica.com/de-avellaneda-a-rusia-un-gestor-cultural-local-fue-seleccionado-para-ir-al-festival-internacional-de-la-juventud-2026" target="_blank" rel="noopener noreferrer"><span>Somos Cítrica · 2026</span><strong>Cobertura sobre la selección internacional y el recorrido profesional en Avellaneda.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://agenciaelvigia.com.ar/nota/6466/de-avellaneda-a-rusia-un-gestor-cultural-local-participara-del-festival-internacional-de-la-juventud-2026" target="_blank" rel="noopener noreferrer"><span>Agencia El Vigía · 2026</span><strong>Representación internacional, gestión cultural y coordinación del Centro Municipal de Arte.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://ciudadinfo.com.ar/guido-javier-masso-fue-seleccionado-para-participar-del-international-festival-of-youth-2026-en-rusia-49880" target="_blank" rel="noopener noreferrer"><span>Ciudad Info · 2026</span><strong>Perfil sobre gestión, formación audiovisual, Pulsar Humano y Festival Internacional de la Juventud.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://surnodal.com/noticias/del-aula-al-mapa-global-estudio-en-la-unq-y-participara-del-festival-internacional-de-la-juventud-en-rusia-28d959e60137" target="_blank" rel="noopener noreferrer"><span>Sur Nodal · 2026</span><strong>Formación universitaria, UNQ Streaming, Altavoz, gestión pública y proyección internacional.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://ultimanoticiaba.com/2026/09/07/de-avellaneda-a-rusia-guido-masso-representara-al-distrito-en-el-festival-internacional-de-la-juventud-2026/" target="_blank" rel="noopener noreferrer"><span>Última Noticia BA · 2026</span><strong>Guido Masso representará al distrito en el Festival Internacional de la Juventud 2026.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://www.unq.edu.ar/noticias/la-muestra-de-la-unq-mundos-interiores-se-presenta-en-el-cpa/" target="_blank" rel="noopener noreferrer"><span>Universidad Nacional de Quilmes · 2025</span><strong>Participación como artista en la muestra “Mundos interiores”.</strong><em>Leer fuente ↗</em></a>
-          <a class="source-card" href="https://noticiascpb.com.ar/?p=6903" target="_blank" rel="noopener noreferrer"><span>Noticias CPB · 2026</span><strong>Cobertura sobre la participación internacional y el recorrido profesional.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://extranewsmundo.com/ekaterimburgo-prepara-festival-mundial-juventud/" target="_blank" rel="noopener noreferrer"><span>ExtraNews Mundo · 2026</span><strong>Cobertura vinculada al Festival Internacional de la Juventud en Ekaterimburgo.</strong><em>Leer nota ↗</em></a>
-          <a class="source-card" href="https://drive.google.com/file/d/1jiWRoE3Q-RmKX0XqKP3dLaDResl0-q90/view" target="_blank" rel="noopener noreferrer"><span>UNQ TV · 2026</span><strong>Recorte audiovisual de la cobertura universitaria.</strong><em>Ver archivo ↗</em></a>
-          <a class="source-card" href="https://drive.google.com/drive/folders/1dWitIC_SWRgUSXV1CyuZCawCaDhYg88o" target="_blank" rel="noopener noreferrer"><span>Archivo de publicaciones · 2026</span><strong>Recopilación de publicaciones y recortes en redes sociales sobre la participación internacional.</strong><em>Ver archivo ↗</em></a>
-          <a class="source-card" href="https://journals.openedition.org/cadernosaa/2626?file=1" target="_blank" rel="noopener noreferrer"><span>Investigación académica</span><strong>Estudio sobre el Frente Cultural María Remedios del Valle y sus intervenciones públicas en Avellaneda.</strong><em>Leer fuente ↗</em></a>
-          <a class="source-card" href="https://guidojaviermasso.github.io/SeptimoFilms/index.html" target="_blank" rel="noopener noreferrer"><span>Archivo web · Séptimo Films</span><strong>Sitio original de la productora con trabajos audiovisuales y fotográficos.</strong><em>Ver archivo ↗</em></a>
-        </div>
+        <div class="sources-grid"><a class="source-card" href="https://agencia.unq.edu.ar/?p=38875" target="_blank" rel="noopener noreferrer"><span>Agencia de Noticias Científicas UNQ · 2026</span><strong>Perfil sobre graduación, documental, CMA, Potencia Argentina y participación en el Festival Internacional de la Juventud.</strong><em>Leer fuente ↗</em></a>
+<a class="source-card" href="https://elnumeral.com/amp/2018/03/15/la-democratizacion-del-arte-lo-mas-valioso-este-municipio/" target="_blank" rel="noopener noreferrer"><span>El Numeral · Entrevista · 15.03.2018</span><strong>«La democratización del arte es lo más valioso que tiene este municipio». Entrevista sobre la coordinación del Multiespacio Cultural de Avellaneda.</strong><em>Leer entrevista ↗</em></a>
+<a class="source-card" href="https://avellanedahoy.com.ar/nota/24339/de-avellaneda-a-rusia-un-gestor-cultural-local-fue-seleccionado-para-participar-del-festival-internacional-de-la-juventud-2026/" target="_blank" rel="noopener noreferrer"><span>Avellaneda Hoy · 2026</span><strong>De Avellaneda a Rusia: selección para el Festival Internacional de la Juventud 2026.</strong><em>Leer nota ↗</em></a></div>
+<details class="archive-details">
+  <summary>Consultar archivo completo <span>15 referencias adicionales</span></summary>
+  <div class="sources-grid v3-sources-archive"><a class="source-card" href="https://www.youtube.com/live/SoQ7aVaS3Zg" target="_blank" rel="noopener noreferrer"><span>UNQ Streaming · 2026</span><strong>Entrevista audiovisual sobre No tengan miedo, Lo Que Vendrá y el recorrido reciente.</strong><em>Ver entrevista ↗</em></a>
+<a class="source-card" href="https://www.infocielo.com/sociedad/del-aula-al-mapa-global-estudio-en-la-unq-y-participara-del-festival-internacional-de-la-juventud-en-rusia" target="_blank" rel="noopener noreferrer"><span>Infocielo · 2026</span><strong>Del aula al mapa global: formación en la UNQ, gestión cultural y participación internacional.</strong><em>Leer nota ↗</em></a>
+<a class="source-card" href="https://diariolaciudadavellaneda.com.ar/de-avellaneda-a-rusia-un-gestor-cultural-local-fue-seleccionado-para-participar-del-festival-internacional-de-la-juventud-2026/" target="_blank" rel="noopener noreferrer"><span>La Ciudad Avellaneda · 2026</span><strong>Trayectoria cultural pública y participación en el encuentro internacional de Ekaterimburgo.</strong><em>Leer nota ↗</em></a>
+<a class="source-card" href="https://somoscitrica.com/de-avellaneda-a-rusia-un-gestor-cultural-local-fue-seleccionado-para-ir-al-festival-internacional-de-la-juventud-2026" target="_blank" rel="noopener noreferrer"><span>Somos Cítrica · 2026</span><strong>Cobertura sobre la selección internacional y el recorrido profesional en Avellaneda.</strong><em>Leer nota ↗</em></a>
+<a class="source-card" href="https://agenciaelvigia.com.ar/nota/6466/de-avellaneda-a-rusia-un-gestor-cultural-local-participara-del-festival-internacional-de-la-juventud-2026" target="_blank" rel="noopener noreferrer"><span>Agencia El Vigía · 2026</span><strong>Representación internacional, gestión cultural y coordinación del Centro Municipal de Arte.</strong><em>Leer nota ↗</em></a>
+<a class="source-card" href="https://ciudadinfo.com.ar/guido-javier-masso-fue-seleccionado-para-participar-del-international-festival-of-youth-2026-en-rusia-49880" target="_blank" rel="noopener noreferrer"><span>Ciudad Info · 2026</span><strong>Perfil sobre gestión, formación audiovisual, Pulsar Humano y Festival Internacional de la Juventud.</strong><em>Leer nota ↗</em></a>
+<a class="source-card" href="https://surnodal.com/noticias/del-aula-al-mapa-global-estudio-en-la-unq-y-participara-del-festival-internacional-de-la-juventud-en-rusia-28d959e60137" target="_blank" rel="noopener noreferrer"><span>Sur Nodal · 2026</span><strong>Formación universitaria, UNQ Streaming, Altavoz, gestión pública y proyección internacional.</strong><em>Leer nota ↗</em></a>
+<a class="source-card" href="https://ultimanoticiaba.com/2026/09/07/de-avellaneda-a-rusia-guido-masso-representara-al-distrito-en-el-festival-internacional-de-la-juventud-2026/" target="_blank" rel="noopener noreferrer"><span>Última Noticia BA · 2026</span><strong>Guido Masso representará al distrito en el Festival Internacional de la Juventud 2026.</strong><em>Leer nota ↗</em></a>
+<a class="source-card" href="https://www.unq.edu.ar/noticias/la-muestra-de-la-unq-mundos-interiores-se-presenta-en-el-cpa/" target="_blank" rel="noopener noreferrer"><span>Universidad Nacional de Quilmes · 2025</span><strong>Participación como artista en la muestra “Mundos interiores”.</strong><em>Leer fuente ↗</em></a>
+<a class="source-card" href="https://noticiascpb.com.ar/?p=6903" target="_blank" rel="noopener noreferrer"><span>Noticias CPB · 2026</span><strong>Cobertura sobre la participación internacional y el recorrido profesional.</strong><em>Leer nota ↗</em></a>
+<a class="source-card" href="https://extranewsmundo.com/ekaterimburgo-prepara-festival-mundial-juventud/" target="_blank" rel="noopener noreferrer"><span>ExtraNews Mundo · 2026</span><strong>Cobertura vinculada al Festival Internacional de la Juventud en Ekaterimburgo.</strong><em>Leer nota ↗</em></a>
+<a class="source-card" href="https://drive.google.com/file/d/1jiWRoE3Q-RmKX0XqKP3dLaDResl0-q90/view" target="_blank" rel="noopener noreferrer"><span>UNQ TV · 2026</span><strong>Recorte audiovisual de la cobertura universitaria.</strong><em>Ver archivo ↗</em></a>
+<a class="source-card" href="https://drive.google.com/drive/folders/1dWitIC_SWRgUSXV1CyuZCawCaDhYg88o" target="_blank" rel="noopener noreferrer"><span>Archivo de publicaciones · 2026</span><strong>Recopilación de publicaciones y recortes en redes sociales sobre la participación internacional.</strong><em>Ver archivo ↗</em></a>
+<a class="source-card" href="https://journals.openedition.org/cadernosaa/2626?file=1" target="_blank" rel="noopener noreferrer"><span>Investigación académica</span><strong>Estudio sobre el Frente Cultural María Remedios del Valle y sus intervenciones públicas en Avellaneda.</strong><em>Leer fuente ↗</em></a>
+<a class="source-card" href="https://guidojaviermasso.github.io/SeptimoFilms/index.html" target="_blank" rel="noopener noreferrer"><span>Archivo web · Séptimo Films</span><strong>Sitio original de la productora con trabajos audiovisuales y fotográficos.</strong><em>Ver archivo ↗</em></a></div>
+</details>
       </div>
     </section>
 
     <section id="contacto" class="section contact-section">
       <div class="shell contact-grid">
-        <div><p class="eyebrow">Contacto</p><h2>Proyectos, instituciones, cultura, comunicación.</h2><p>Para conversaciones profesionales y colaboraciones, podés encontrarme en mis canales públicos.</p></div>
+        <div><p class="eyebrow">Contacto</p><h2>Proyectos, instituciones, cultura, comunicación.</h2><p>Para conversaciones profesionales y colaboraciones, podés encontrarme en estos canales.</p></div>
         <div class="contact-links">
           <a href="https://ar.linkedin.com/in/guido-javier-masso-0220596a" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><b>↗</b></a>
           <a href="https://instagram.com/guidojmasso" target="_blank" rel="noopener noreferrer"><span>Instagram</span><b>↗</b></a>
